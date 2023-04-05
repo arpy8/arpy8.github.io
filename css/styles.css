@@ -6,6 +6,11 @@ body {
   cursor: default;
 }
 
+::selection {
+	color: white;
+	background: #1D888A;
+  }
+
 img {  
   user-select: none;
   -moz-user-select: none;
