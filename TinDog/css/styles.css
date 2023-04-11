@@ -134,7 +134,39 @@ h2{
     margin: -30px 20px 50px 0px;
 }
 
+
 /* pricing */
 #pricing{
     text-align: center;
+    padding: 7% 15%;
+}
+
+.pricing-column{
+    padding:3% 2%;
+  }
+
+
+/* cta */
+#cta{
+    background-color: #ff4c68;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+#cta h3 {
+    color: #fff !important;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+}
+
+/* footer section */
+
+#footer{
+    text-align: center;
+    background-color: #fff;
+    padding: 2%;
+  }
+  
+.social-icon{
+margin: 20px 10px;
 }
