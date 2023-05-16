@@ -4,6 +4,7 @@ body {
   text-align: center;
   font-family: 'Merriweather', serif;
   cursor: default;
+  overflow-x: hidden !important;
 }
 
 ::selection {
@@ -182,3 +183,4 @@ ul {
   margin: 0;
   padding: 0;
 }
+
