@@ -1,5 +1,5 @@
 # My Website
-This is the repository for my personal website, where I showcase my work and share my thoughts on various topics. The website is built using just HTML and hosted on GitHub.
+This is the repository for my personal website, hosted on GitHub.
 
 ### Link to my personal website
 https://arpy8.github.io/
