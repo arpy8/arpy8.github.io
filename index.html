@@ -5,617 +5,862 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>arpy8's Portfolio</title>
+  <title>arpy8 | Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.webp" rel="icon">
-  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/mlle-touch-icon.webp" rel="mlle-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
   <!-- ======= Header ======= -->
   <header id="header">
-    <div class="container">
+    <div class="d-flex flex-column">
 
-      <h1><a href="index.html">arpy8</a></h1>
-      <h2>Hi! I'm <span>Arpit</span>, a passionate cs student from Ghaziabad</h2>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/arpitsengar/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/arpy8_" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://twitter.com/arpitwastaken" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://github.com/arpy8" class="facebook"><i class="bi bi-github"></i></a>
+      <div class="profile">
+        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Arpit Sengar</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/arpitsengar/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/arpy8" class="google-plus"><i class="bx bxl-github"></i></a>
+          <a href="mailto:arpitsengar99@gmail.com" class="facebook"><i class="bx bxl-gmail"></i></a>
+          <a href="https://www.instagram.com/arpy8_" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://linktr.ee/arpy8" class="twitter"><i class="bx bx-link-alt"></i></a>
+        </div>
       </div>
-
+      <br><br><br>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Projects</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Arpit Sengar</h1>
+      <p>I'm a <span class="typed" data-typed-items="Developer, Designer, Beatboxer, Photographer"></span></p>
+    </div>
+  </section><!-- End Hero -->
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
+  <main id="main">
 
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn more about me</p>
-      </div>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
 
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.webp" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p class="fst-italic">
-            Sleep is just a debugging break for the brain of a passionate CS student
+        <div class="section-title">
+          <h2>About</h2>
+          <p>As a driven and innovative student I have honed my skills in a variety of programming languages and
+            technologies while pursuing my degree in Computer Science. I own a strong understanding of fundamental
+            computer science principles and have demonstrated my ability to mlly this knowledge to real world projects.
+            I am passionate about staying up to date with the latest trends and advancements in software development.
           </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 March 2005</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 93113 8985</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ghaziabad, Uttar Pradesh</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Undergrad</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>arpitsengar99@gmail.com</span></li>
-              </ul>
-            </div>
-          </div>
-          <p>
-            <br><br>
-            Embarking on a computer science journey at VIT Bhopal, I fuse code and creativity while pursuing a passion for sketching and beatboxing. Engaging with diverse minds fuels my growth, as I continually enhance coding prowess and embrace emerging trends. Python remains my cherished language. Respectful and eager to assist, I thrive on discovering fresh technologies. Join me in exploring the ever-evolving tech landscape.</p>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">Python <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Cpp <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Graphic Design <i class="val">85%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
         </div>
 
-        <div class="col-lg-6">
-
-           
-          <div class="progress">
-            <span class="skill">HTML <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">85%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Adobe Illustrator <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div><!-- End Skills -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Machine Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Deep Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Web Automation</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #e361ff;"></i>
-            <h3>Data Analysis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>Computer Vision</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>Web Dev</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #47aeff;"></i>
-            <h3>Sketching</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>Beatboxing</h3>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Interests -->
-    
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
-      </div>
-
-      <h3><a href="assets/misc/Arpit_Sengar_Resume.pdf" style="text-decoration: none; color: #ffffff75;">Download PDF &#x2913;</a></h3>
-      
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Sumary</h3>
-          <div class="resume-item pb-0">
-            <h4>Arpit Sengar</h4>
-            <p><em>Motivated and detail-oriented Computer Science student actively honing skills in designing and crafting user-centric digital and print assets.</em></p>
-            <p>
-            <ul>
-              <li>+91 93113 89851</li>
-              <li>arpitsengar99@gmail.com</li>
-            </ul>
-            </p>
-          </div>
-
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Bachelor of Technology</h4>
-            <h5>2022 - 2026</h5>
-            <p><em>VIT Bhopal University, Bhopal, Madhya Pradesh</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>High school Diploma</h4>
-            <h5>2021 - 2022</h5>
-            <p><em>Nehru World School, Shastri Nagar, Ghaziabad, Uttar Pradesh</em></p>
-          </div>
-
-          <h3 class="resume-title">Certifications</h3>
-          <div class="resume-item">
-            <h4>Social Summer of Code (SSOC) Season 2</h4>
-            <h5>Issued Aug 2023</h5>
-            <h6><a href="https://certificate.givemycertificate.com/c/14add0fd-14b5-4084-9379-885089733815">Show credential</a></h6>
-          </div>
-
-          <div class="resume-item">
-            <h4>TCS iON Career Edge - Young Professional</h4>
-            <h5>Issued Jul 2023</h5>
-            <h6><a href="https://drive.google.com/file/u/1/d/190gwVIsE2PgZob0z6XzyLsxbiw9w80sN/view?usp=sharing">Show credential</a></h6>
-          </div>
-
-          <div class="resume-item">
-            <h4>C++ Programming -Beginner to Advance- Deep Dive in C++</h4>
-            <h5>Issued Jun 2023</h5>
-            <h6><a href="https://www.udemy.com/certificate/UC-a77839ad-27e1-47f9-8068-a068d80e6083/">Show credential</a></h6>
-          </div>
-
-          <div class="resume-item">
-            <h4>100 Days of Code: The Complete Python Pro Bootcamp for 2023</h4>
-            <h5>Issued May 2023</h5>
-            <h6><a href="https://www.udemy.com/certificate/UC-d3f8ea5c-c279-4f9d-b687-fad149ac4883/">Show credential</a></h6>
-          </div>
-          <br>
-          <h6><em><a style="color: white !important;" href="https://www.linkedin.com/in/arpitsengar/details/certifications/">more...</a></em></h6>
-
-        </div>
-
-        <div class="col-lg-6">
-          <h3 class="resume-title">Experience</h3>
-          
-          <div class="resume-item">
-            <h4>Collaborator at Omdena</h4>
-            <h5>07/23 - present</h5>
-            <p>
-              <strong>Developing an Interactive Chatbot, Omdena Nigeria Chapter</strong>
-            </p>
-            <p>
-            <ul>
-              <li>Gained an understanding of creating chatbots using Rasa</li>
-              <li>Developed a demo chatbot for the Omdena's website</li>
-              <li>Delivered Rasa installation tutorial for Omdena's Nigeria chapter</li>
-            </ul>
-            </p>  
-
-            <h5>05/23 - 07/23</h5>
-            <p><strong>NLP with Disaster Tweets, Omdena Giza Chapter</strong></p>
-            <p>
-            <ul>
-              <li>Performed exploratory data analysis on the final tweet dataset</li>
-              <li>Assisted with the final documentation (ppt, reports)</li>
-            </ul>
-            </p>
-            
-            <h5>05/23 - 07/23</h5>
-            <p><strong>Water Quality Prediction System, Omdena Rwanda Chapter</strong></p>
-            <p>
-            <ul>
-              <li>Got familiar with supervised learning algorithms such as SVM</li>
-              <li>Became the sub lead for the deployment team</li>
-              <li>Developed the final web application for the water prediction system using streamlit</li>
-            </ul>
-            </p>
-
-            <h5>04/23 - 06/23</h5>
-            <p><strong>AI Based Road Inspection System, Omdena Mexico Chapter</strong></p>
-            <p>
-            <ul>
-              <li>Anotated around 1200 images for the final dataset</li>
-              <li>Got familiarized with several object detection algorithms, such as YOLOv5 and RCNN</li>
-              <li>Developed an AI Road Inspection System for detecting potholes</li>
-            </ul>
-            </p>
-            
-          </div>
-
-          <div class="resume-item">
-            <h4>Core Team Member</h4>
-            <h5>2023 - ongoing</h5>
-            <p><strong>GeeksforGeeks Student Chapter, VITB</strong></p>
-            <p>
-            <ul>
-              <li>Technical Core Team Member.</li>
-            </ul>
-            </p>
-            <p><strong>AI Club, VITB</strong></p>
-            <p>
-              <ul>
-                <li>Graphics & Videography Team Member</li>
-              </ul>
-              </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>Projects I've worked on  </p>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>AI Road Inspection System</h4>
-              <p>Omdena Mexico Chapter</p>
-              <div class="portfolio-links">
-                <a href="projects/project-1.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>NLP with Disaster Tweets</h4>
-              <p>Omdena Giza Chapter</p>
-              <div class="portfolio-links">
-                <a href="projects/project-2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Water Quality Prediction System</h4>
-              <p>Omdena Rwanda Chapter</p>
-              <div class="portfolio-links">
-                <a href="projects/project-3.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Interactive Chatbot</h4>
-              <p>Omdena Nigeria Chapter</p>
-              <div class="portfolio-links">
-                <a href="projects/project-4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Chest X-Rays Disease Detection </h4>
-              <p>Omdena Myanmar Chapter</p>
-              <div class="portfolio-links">
-                <a href="projects/project-5.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>GFG Student Chapter Website</h4>
-              <p>Submission for interview round</p>
-              <div class="portfolio-links">
-                <a href="projects/project-9.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>SmartOCR</h4>
-              <p>EasyOCR to OPENAI API</p>
-              <div class="portfolio-links">
-                <a href="projects/project-6.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>IntruderShield</h4>
-              <p>Webcam Intruder Detection and Screen Lock</p>
-              <div class="portfolio-links">
-                <a href="projects/project-8.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Voice Bot 2.0</h4>
-              <p>voice assistant script written in Python</p>
-              <div class="portfolio-links">
-                <a href="projects/project-7.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Tech Today - News Website</h4>
-              <p>News Website made under 5 lines</p>
-              <div class="portfolio-links">
-                <a href="projects/project-10.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Github Follow Bot</h4>
-              <p>Made using selenium</p>
-              <div class="portfolio-links">
-                <a href="projects/project-11.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-12.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>NewsPulse - News Website 2.0</h4>
-              <p>Submission for Streamlit's Hackathon</p>
-              <div class="portfolio-links">
-                <a href="projects/project-12.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-13.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Cafe Website 2.0</h4>
-              <p>A simple cafe website made using HTML and CSS</p>
-              <div class="portfolio-links">
-                <a href="projects/project-13.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>arpitsengar99@gmail.com</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/arpitsengar/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="https://www.instagram.com/arpy8_" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://twitter.com/arpitwastaken" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://github.com/arpy8" class="facebook"><i class="bi bi-github"></i></a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <form action="https://formsubmit.co/e9148dd4e481596ccdaebfc6fab7d741" method="post" class="email-form mt-4">
         <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="img/profile-img.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>I code.</h3>
+            <p class="fst-italic">
+              Sleep is just a debugging break for me.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 March 2005</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.arpy8.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 93113 89851</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ghaziabad, Uttar Pradesh</span>
+                  </li>
+                </ul>
+                <br>
+                <br>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech. CSE (spec. in
+                      AIML)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>arpitsengar99@gmail.com</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Open to Work:</strong> <span>&#x2713;</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I'm studying computer science at VIT Bhopal. I like coding and being creative, and I'm into sketching and
+              beatboxing too. I enjoy learning from different people to grow and stay updated on tech trends. Python is
+              my
+              favorite language, and I'm always excited to explore new technologies.
+            </p>
           </div>
         </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="text-center my-3"><button type="submit">Send Message</button></div>
-      </form>
 
-    </div>
-  </section><!-- End Contact Section -->
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Dive into my skill set below and discover the range of tools I leverage in the ever-evolving digital
+            landscape.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CPP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Illustrator <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Arpit Sengar</h4>
+              <p><em>Motivated and detail-oriented Computer Science student actively honing his skills.</em></p>
+              <ul>
+                <li>Ghaziabad, Uttar Pradesh, India</li>
+                <li>+91 93113 89851</li>
+                <li>arpitsengar99@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>B.Tech. CSE (spec. in AIML)</h4>
+              <h5>2022 - 2026</h5>
+              <p><em>VIT Bhopal University, Bhopal, Madhya Pradesh</em></p>
+              <p>VIT Bhopal is a dynamic institution of higher learning, fosters innovation, excellence, and global
+                perspectives. With a vibrant campus, world-class faculty, and cutting-edge facilities, it empowers
+                students to thrive in a rapidly changing world.</p>
+            </div>
+            <div class="resume-item">
+              <h4>HIGH SCHOOL</h4>
+              <h5>2020 - 2022</h5>
+              <p><em>Nehru World School, Shastri Nagar, Ghaziabad, Uttar Pradesh</em></p>
+              <p></p>
+            </div>
+
+            <h3 class="resume-title">Certifications</h3>
+            <div class="resume-item">
+              <h4>SOCIAL SUMMER OF CODE (SSOC) SEASON 2</h4>
+              <h5>April, 2023</h5>
+              <p><em>Social: Let's Get Social</em></p>
+              <p><a href="https://certificate.givemycertificate.com/c/14add0fd-14b5-4084-9379-885089733815">Show
+                  credentials</a></p>
+            </div>
+            <div class="resume-item">
+              <h4>100 DAYS OF PYTHON: THE COMPLETE PYTHON BOOTCAMP</h4>
+              <h5>May, 2023</h5>
+              <p><em>By Angela Yu on Udemy</em></p>
+              <p><a href="https://www.udemy.com/certificate/UC-d3f8ea5c-c279-4f9d-b687-fad149ac4883/">Show
+                  credentials</a></p>
+            </div>
+            <div class="resume-item">
+              <h4>C++ PROGRAMMING, DEEP DIVE IN C++</h4>
+              <h5>June, 2023</h5>
+              <p><em>By Abdul Bari on Udemy</em></p>
+              <p><a href="https://www.udemy.com/certificate/UC-a77839ad-27e1-47f9-8068-a068d80e6083/">Show
+                  credentials</a></p>
+            </div>
+            <div class="resume-item">
+              <h4>Supervised Machine Learning: Regression and Classification</h4>
+              <h5>September, 2023</h5>
+              <p><em>By Andrew Ng on Coursera</em></p>
+              <p><a href="https://www.coursera.org/account/accomplishments/verify/KSUUH4F22KFG">Show credentials</a></p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4>Software Developer</h4>
+              <h5>Nov'23 - Present</h5>
+              <p><em>Rex Industries, Bhopal, Madhya Pradesh</em></p>
+              <ul>
+                <li>Developing software components utilizing the Robot Operating System
+                  (ROS) with other systems.</li>
+                <li>Coding and integrating sensors with computers for optimal performance.</li>
+                <li>Creating, implementing, and refining AI/ML algorithms for our projects.</li>
+                <li>Overseeing the overall software aspects of our innovative initiatives.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Junior ML Engineer</h4>
+              <h5>Apr'23 - Present</h5>
+              <p><em>Omdena, Newyork, NY</em></p>
+              <ul>
+                <li>Omdena is the collaborative platform to build innovative, ethical, and efficient AI and Data Science
+                  solutions to real-world problems.</li>
+                <li>Effectively engaged in over six real-world machine learning projects, collaborating with
+                  individuals from diverse cultural backgrounds.</li>
+                <li>Delivered Rasa installation tutorial for Omdena's Nigeria chapter. Shared technical expertise aiding
+                  in successful implementation.</li>
+                <li>Received letter of recommendation from Omdena for being an active contributor in more than 6 local
+                  chapters.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Technical Team Member</h4>
+              <h5>Aug'23 - Present</h5>
+              <p><em>GFG Chapter VITB, Bhopal, Madhya Pradesh</em></p>
+              <ul>
+                <li>Actively involved in technical discussions and decision-making processes within the team.</li>
+                <li>Collaborating with fellow team members to organize coding competitions and workshops, enhancing the
+                  technical skills of participants.</li>
+                <li>Contributing to the development and maintenance of the chapter's main website.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Graphics & Video Team Member</h4>
+              <h5>Feb'23 - Present</h5>
+              <p><em>AI Club VITB, Bhopal, Madhya Pradesh</em></p>
+              <ul>
+                <li>Contributed in designing visually mlealing certificates and banners for the club's events and
+                  initiatives.</li>
+                <li>Collaborated closely with team members to brainstorm and implement creative ideas for graphic and
+                  video content.</li>
+                <li>Utilized graphic design software (Adobe Illustrator and Canva) to enhance the overall quality of
+                  visual materials produced for the club.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Throughout my coding journey I've build a lot of coding projects, covering several domains.
+            I have categorized my projects under different sections below</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>•
+              <li data-filter=".filter-omd">Omdena</li>•
+              <li data-filter=".filter-ml">Machine Learning</li>•
+              <li data-filter=".filter-web">Web Development</li>•
+              <li data-filter=".filter-pack">Packages</li>•
+              <li data-filter=".filter-cv">Computer Vision</li>•
+              <li data-filter=".filter-auto">Automation</li>•
+              <li data-filter=".filter-crs">Courses</li>•
+              <li data-filter=".filter-misc">Misc</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- MACHINE LEARNING -->
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="img/projects/alzheimer.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Alzheimers_Prediction_System" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://alzheimers-prediction.streamlit.app" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="img/projects/plant.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Plant_Disease_Detection" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://github.com/arpy8/Plant_Disease_Detection#note" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="img/projects/sonnet.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/ArpitSengar_TaskRound_GDSC_VITB" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://shakespeares-sonnets.streamlit.app" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="img/projects/insaights.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/insaights" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://insaights.streamlit.app" target="_blank"><i class="bx bx-link"></i></a>
+                  <a href="https://youtu.be/jOYO0_nI5pQ?si=qW-pTQq8Q_jOqH-Z" target="_blank"><i class="bx bxl-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="img/projects/randai.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Random_AI_Image_Generator" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://randai.streamlit.app/" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="img/projects/pothole.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Pothole_Detection_YOLOv8" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://github.com/arpy8/Pothole_Detection_YOLOv8/blob/main/Pothole_Detection.ipynb" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="img/projects/wine.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Wine_Quality_Prediction" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://github.com/arpy8/Wine_Quality_Prediction/blob/main/Wine%20Quality%20Prediction.ipynb" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="img/projects/house.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/House_Price_Prediction" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://github.com/arpy8/House_Price_Prediction/blob/main/House%20Prediction%20Model.ipynb" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- OMDENA -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
+            <div class="portfolio-wrap">
+              <img src="img/projects/omdena-mexico.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/OmdenaAI/bhopal-mexico-ai-road-inspection" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://restlesshornet-omdenawebapp-app-1qfufd.streamlit.app/" target="_blank"><i class="bx bx-link"></i></a>
+                  <a href="https://verified.sertifier.com/en/verify/05450052227312/" target="_blank"><i class="bx bx-certification"></i></a>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
+            <div class="portfolio-wrap">
+              <img src="img/projects/omdena-giza.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="https://omdena.com/chapter-challenges/natural-language-processing-with-disaster-tweets/" target="_blank"><i class="bx bx-link"></i></a>
+                <a href="https://app-2-tweets-classification.streamlit.app/Tweet_Classification" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://verified.sertifier.com/en/verify/24196558568788/" target="_blank"><i class="bx bx-certification"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
+            <div class="portfolio-wrap">
+              <img src="img/projects/omdena-rwanda.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Omdena_Rwanda_Streamlit_App" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://water-quality-prediction-system.streamlit.app" target="_blank"><i class="bx bx-link"></i></a>
+                  <a href="https://verified.sertifier.com/en/verify/94134509986045/" target="_blank"><i class="bx bx-certification"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
+            <div class="portfolio-wrap">
+              <img src="img/projects/omdena-myanmar.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Omdena_Myanmar_Streamlit_App" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://chest-xrays-detection-system.streamlit.app" target="_blank"><i class="bx bx-link"></i></a>
+                  <a href="https://verified.sertifier.com/en/verify/19716767828126/" target="_blank"><i class="bx bx-certification"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
+            <div class="portfolio-wrap">
+              <img src="img/projects/omdena-nigeria.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/OmdenaAI/nigeria-chapter-interactive-chatbot" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://omdena.com/chapter-challenges/developing-an-interactive-chatbot-for-the-omdena-website/" target="_blank"><i class="bx bx-link"></i></a>
+                  <a href="https://verified.sertifier.com/en/verify/10080096809863/" target="_blank"><i class="bx bx-certification"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <!-- WEB DEVELOPMENT -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/gfg.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/ArpitSengar_TaskRound_GFG_VITB" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io/ArpitSengar_TaskRound_GFG_VITB/" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/cafe.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/cafe_website/" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io/cafe_website/" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/tindog.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/TinDog/" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io/TinDog/" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/portfolio-archive.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/portfolios/" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io/portfolios/" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/newspulse.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Streamlit_Connection_Hackathon" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://connectionshackathon.streamlit.app/" target="_blank"><i class="bx bx-link"></i></a>
+                  <a href="https://youtu.be/2NnQfGkDzp8?si=0zMLtELU6uvwr3ru" target="_blank"><i class="bx bxl-youtube"></i></a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-misc filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/tech-news.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Tech_News_Website" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://techtoday.streamlit.app/" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PORTFOLIOS -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/portfolio-1.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/portfolios/tree/main/1" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io/portfolios/1/index.html" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/portfolio-2.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/portfolios/tree/main/2" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io/portfolios/2/index.html" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/portfolio-3.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/portfolios/tree/main/3" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io/portfolios/3/index.html" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/portfolio-4.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/portfolios/tree/main/4" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io/portfolios/4/index.html" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/projects/portfolio-5.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/arpy8.github.io" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PACKAGES -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
+            <div class="portfolio-wrap">
+              <img src="img/projects/stret.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/portfolios/tree/main/1" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://arpy8.github.io/portfolios/1/index.html" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
+            <div class="portfolio-wrap">
+              <img src="img/projects/arpit.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/arpit/" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://pypi.org/project/arpit/" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
+            <div class="portfolio-wrap">
+              <img src="img/projects/bsod.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/bsod" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://pypi.org/project/bsod/" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
+            <div class="portfolio-wrap">
+              <img src="img/projects/pikmin.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/pikmin" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://pypi.org/project/pikmin/" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--  COMPUTER VISION -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cv">
+            <div class="portfolio-wrap">
+              <img src="img/projects/hand.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Hand_Gesture_Control" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://www.linkedin.com/posts/arpitsengar_computervision-gesturecontrol-opensource-activity-7102331694921244672-RLiF/" target="_blank"><i class="bx bx-video"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cv">
+            <div class="portfolio-wrap">
+              <img src="img/projects/chime.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Door_Chime_using_OpenCV" target="_blank"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--  AUTOMATION -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-auto">
+            <div class="portfolio-wrap">
+              <img src="img/projects/github.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Github_Follow_Bot" target="_blank"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-auto">
+            <div class="portfolio-wrap">
+              <img src="img/projects/linkedin.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Linkedin_Follow_Bot" target="_blank"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-auto">
+            <div class="portfolio-wrap">
+              <img src="img/projects/vityarthi.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Vityarthi_Course_Completer/" target="_blank"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-auto">
+            <div class="portfolio-wrap">
+              <img src="img/projects/intruder.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/IntruderShield" target="_blank"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- COURSES -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-crs">
+            <div class="portfolio-wrap">
+              <img src="img/projects/100.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/100_days_of_python" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://ude.my/UC-d3f8ea5c-c279-4f9d-b687-fad149ac4883/" target="_blank"><i class="bx bx-certification"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-crs">
+            <div class="portfolio-wrap">
+              <img src="img/projects/cpp.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/CPP_Journey" target="_blank"><i class="bx bxl-github"></i></a>
+                  <a href="https://www.udemy.com/certificate/UC-a77839ad-27e1-47f9-8068-a068d80e6083/" target="_blank"><i class="bx bx-certification"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-crs">
+            <div class="portfolio-wrap">
+              <img src="img/projects/dsa.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/DSA_in_CPP" target="_blank"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MISC -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-misc">
+            <div class="portfolio-wrap">
+              <img src="img/projects/pomodoro.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/Pomodoro_App" target="_blank"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-misc">
+            <div class="portfolio-wrap">
+              <img src="img/projects/secure.webp" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <a href="https://github.com/arpy8/SecureVault" target="_blank"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Ghaziabad, Uttar Pradesh, India</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>arpitsengar99@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 93113 89851</p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.5358699645067!2d76.84871217505619!3d23.077471479135305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397ce9ceaaaaaaab%3A0xa224b6b82b421f83!2sVIT%20Bhopal%20University!5e0!3m2!1sen!2sin!4v1699856923153!5m2!1sen!2sin"
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="https://formsubmit.co/arpitsengar99@gmail.com" method="post" class="email-email-form mt-4">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div> 
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/typed.js/typed.umd.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
