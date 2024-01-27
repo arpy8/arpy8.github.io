@@ -9,8 +9,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/mlle-touch-icon.webp" rel="mlle-touch-icon">
+  <link href="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/favicon.png" rel="icon">
+  <link href="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/mlle-touch-icon.webp" rel="mlle-touch-icon">
 
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -25,6 +25,837 @@
 
   <link href="style.css" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: #080205;
+    }
+
+    a {
+      color: #F68651;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #37b3ed;
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+    }
+
+    .back-to-top {
+      position: fixed;
+      visibility: hidden;
+      opacity: 0;
+      right: 15px;
+      bottom: 15px;
+      z-index: 996;
+      background: #F68651;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      transition: all 0.4s;
+    }
+
+    .back-to-top i {
+      font-size: 28px;
+      color: #fff;
+      line-height: 0;
+    }
+
+    .back-to-top:hover {
+      background: #2eafec;
+      color: #fff;
+    }
+
+    .back-to-top.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 300px;
+      transition: all ease-in-out 0.5s;
+      z-index: 9997;
+      transition: all 0.5s;
+      padding: 0 15px;
+      background: #040b14;
+      overflow-y: auto;
+    }
+
+    #header .profile img {
+      margin: 15px auto;
+      display: block;
+      width: 120px;
+      border: 8px solid #2c2f3f;
+    }
+
+    #header .profile h1 {
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+      -moz-text-align-last: center;
+      text-align-last: center;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #header .profile h1 a,
+    #header .profile h1 a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #header .profile .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: #212431;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+    }
+
+    #header .profile .social-links a:hover {
+      background: #F68651;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #main {
+      margin-left: 300px;
+    }
+
+    .container,
+    .container-fluid {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (max-width: 1199px) {
+      #header {
+        left: -300px;
+      }
+
+      #main {
+        margin-left: 0;
+      }
+
+      .container,
+      .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+
+    .nav-menu {
+      padding: 30px 0 0 0;
+    }
+
+    .nav-menu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-menu>ul>li {
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-menu a,
+    .nav-menu a:focus {
+      display: flex;
+      align-items: center;
+      color: #a8a9b4;
+      padding: 12px 15px;
+      margin-bottom: 8px;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    .nav-menu a i,
+    .nav-menu a:focus i {
+      font-size: 24px;
+      padding-right: 8px;
+      color: #6f7180;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu .active,
+    .nav-menu .active:focus,
+    .nav-menu li:hover>a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .nav-menu a:hover i,
+    .nav-menu .active i,
+    .nav-menu .active:focus i,
+    .nav-menu li:hover>a i {
+      color: #F68651;
+    }
+
+    .mobile-nav-toggle {
+      position: fixed;
+      right: 15px;
+      top: 15px;
+      z-index: 9998;
+      border: 0;
+      font-size: 24px;
+      transition: all 0.4s;
+      outline: none !important;
+      background-color: #149ddd;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 0;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .mobile-nav-active {
+      overflow: hidden;
+    }
+
+    .mobile-nav-active #header {
+      left: 0;
+    }
+
+    #hero {
+      width: 100%;
+      height: 100vh;
+      background: url("https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/hero-bg.jpg") top center;
+      background-size: cover;
+    }
+
+    #hero:before {
+      content: "";
+      background: rgba(5, 13, 24, 0.3);
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    #hero .hero-container {
+      position: relative;
+      z-index: 2;
+      min-width: 300px;
+    }
+
+    #hero h1 {
+      margin: 0 0 10px 0;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 56px;
+      color: #fff;
+    }
+
+    #hero p {
+      color: #fff;
+      margin-bottom: 50px;
+      font-size: 26px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #hero p span {
+      color: #fff;
+      padding-bottom: 4px;
+      letter-spacing: 1px;
+      border-bottom: 3px solid #F68651;
+    }
+
+    @media (min-width: 1024px) {
+      #hero {
+        background-attachment: fixed;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+    }
+
+    section {
+      padding: 60px 0;
+      overflow: hidden;
+    }
+
+    .section-bg {
+      background: #f5f8fd;
+    }
+
+    .section-title {
+      padding-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: #173b6c;
+    }
+
+    .section-title h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #F68651;
+      bottom: 0;
+      left: 0;
+    }
+
+    .section-title p {
+      margin-bottom: 0;
+    }
+
+    .about .content h3 {
+      font-weight: 700;
+      font-size: 26px;
+      color: #173b6c;
+    }
+
+    .about .content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .about .content ul li {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .about .content ul strong {
+      margin-right: 10px;
+    }
+
+    .about .content ul i {
+      font-size: 16px;
+      margin-right: 5px;
+      color: #F68651;
+      line-height: 0;
+    }
+
+    .about .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .facts {
+      padding-bottom: 30px;
+    }
+
+    .facts .count-box {
+      padding: 30px;
+      width: 100%;
+    }
+
+    .facts .count-box i {
+      display: block;
+      font-size: 44px;
+      color: #F68651;
+      float: left;
+      line-height: 0;
+    }
+
+    .facts .count-box span {
+      font-size: 48px;
+      line-height: 40px;
+      display: block;
+      font-weight: 700;
+      color: #050d18;
+      margin-left: 60px;
+    }
+
+    .facts .count-box p {
+      padding: 15px 0 0 0;
+      margin: 0 0 0 60px;
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      color: #122f57;
+    }
+
+    .facts .count-box a {
+      font-weight: 600;
+      display: block;
+      margin-top: 20px;
+      color: #122f57;
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+      transition: ease-in-out 0.3s;
+    }
+
+    .facts .count-box a:hover {
+      color: #1f5297;
+    }
+
+    .skills .progress {
+      height: 60px;
+      display: block;
+      background: none;
+      border-radius: 0;
+    }
+
+    .skills .progress .skill {
+      padding: 0;
+      margin: 0 0 6px 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: #050d18;
+    }
+
+    .skills .progress .skill .val {
+      float: right;
+      font-style: normal;
+    }
+
+    .skills .progress-bar-wrap {
+      background: #dce8f8;
+      height: 10px;
+    }
+
+    .skills .progress-bar {
+      width: 1px;
+      height: 10px;
+      transition: 0.9s;
+      background-color: #F68651;
+    }
+
+    .resume .resume-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #050d18;
+    }
+
+    .resume .resume-item {
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      border-left: 2px solid #1f5297;
+      position: relative;
+    }
+
+    .resume .resume-item h4 {
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      color: #050d18;
+      margin-bottom: 10px;
+    }
+
+    .resume .resume-item h5 {
+      font-size: 16px;
+      background: #e4edf9;
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .resume .resume-item ul {
+      padding-left: 20px;
+    }
+
+    .resume .resume-item ul li {
+      padding-bottom: 10px;
+    }
+
+    .resume .resume-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .resume .resume-item::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50px;
+      left: -9px;
+      top: 0;
+      background: #fff;
+      border: 2px solid #1f5297;
+    }
+
+    .portfolio .portfolio-item {
+      margin-bottom: 30px;
+    }
+
+    .portfolio #portfolio-flters {
+      padding: 0;
+      margin: 0 auto 35px auto;
+      list-style: none;
+      text-align: center;
+      background: #fff;
+      border-radius: 50px;
+      padding: 2px 15px;
+    }
+
+    .portfolio #portfolio-flters li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 15px 8px 15px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #080205;
+      margin-bottom: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .portfolio #portfolio-flters li:hover,
+    .portfolio #portfolio-flters li.filter-active {
+      color: #F68651;
+    }
+
+    .portfolio #portfolio-flters li:last-child {
+      margin-right: 0;
+    }
+
+    .portfolio .portfolio-wrap {
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .portfolio .portfolio-wrap::before {
+      content: "";
+      background: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transition: all ease-in-out 0.3s;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .portfolio .portfolio-wrap .portfolio-links {
+      opacity: 1;
+      left: 0;
+      right: 0;
+      bottom: -60px;
+      z-index: 3;
+      position: absolute;
+      transition: all ease-in-out 0.3s;
+      display: flex;
+      justify-content: center;
+    }
+
+    .portfolio .portfolio-wrap .portfolio-links a {
+      color: #fff;
+      font-size: 28px;
+      text-align: center;
+      background: rgba(20, 157, 221, 0.75);
+      transition: 0.3s;
+      width: 50%;
+    }
+
+    .portfolio .portfolio-wrap .portfolio-links a:hover {
+      background: rgba(20, 157, 221, 0.95);
+    }
+
+    .portfolio .portfolio-wrap .portfolio-links a+a {
+      border-left: 1px solid #37b3ed;
+    }
+
+    .portfolio .portfolio-wrap:hover::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 1;
+    }
+
+    .portfolio .portfolio-wrap:hover .portfolio-links {
+      opacity: 1;
+      bottom: 0;
+    }
+
+    .portfolio-details {
+      padding-top: 40px;
+    }
+
+    .portfolio-details .portfolio-details-slider img {
+      width: 100%;
+    }
+
+    .portfolio-details .portfolio-details-slider .swiper-pagination {
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      opacity: 1;
+      border: 1px solid #F68651;
+    }
+
+    .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+      background-color: #F68651;
+    }
+
+    .portfolio-details .portfolio-info {
+      padding: 30px;
+      box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+    }
+
+    .portfolio-details .portfolio-info h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .portfolio-details .portfolio-info ul {
+      list-style: none;
+      padding: 0;
+      font-size: 15px;
+    }
+
+    .portfolio-details .portfolio-info ul li+li {
+      margin-top: 10px;
+    }
+
+    .portfolio-details .portfolio-description {
+      padding-top: 30px;
+    }
+
+    .portfolio-details .portfolio-description h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-details .portfolio-description p {
+      padding: 0;
+    }
+
+    .contact {
+      padding-bottom: 130px;
+    }
+
+    .contact .info {
+      padding: 30px;
+      background: #fff;
+      width: 100%;
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .contact .info i {
+      font-size: 20px;
+      color: #F68651;
+      float: left;
+      width: 44px;
+      height: 44px;
+      background: #dff3fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .contact .info h4 {
+      padding: 0 0 0 60px;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #050d18;
+    }
+
+    .contact .info p {
+      padding: 0 0 10px 60px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #173b6c;
+    }
+
+    .contact .info .email p {
+      padding-top: 5px;
+    }
+
+    .contact .info .social-links {
+      padding-left: 60px;
+    }
+
+    .contact .info .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+      margin-right: 10px;
+    }
+
+    .contact .info .social-links a:hover {
+      background: #F68651;
+      color: #fff;
+    }
+
+    .contact .info .email:hover i,
+    .contact .info .address:hover i,
+    .contact .info .phone:hover i {
+      background: #F68651;
+      color: #fff;
+    }
+
+    .contact .email-email-form {
+      width: 100%;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .contact .email-email-form .form-group {
+      padding-bottom: 8px;
+    }
+
+    .contact .email-email-form .validate {
+      display: none;
+      color: red;
+      margin: 0 0 15px 0;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    .contact .email-email-form .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: left;
+      padding: 15px;
+      font-weight: 600;
+    }
+
+    .contact .email-email-form .error-message br+br {
+      margin-top: 25px;
+    }
+
+    .contact .email-email-form .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+
+    .contact .email-email-form .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .contact .email-email-form .loading:before {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      margin: 0 10px -6px 0;
+      border: 3px solid #18d26e;
+      border-top-color: #eee;
+      animation: animate-loading 1s linear infinite;
+    }
+
+    .contact .email-email-form .form-group {
+      margin-bottom: 15px;
+    }
+
+    .contact .email-email-form label {
+      padding-bottom: 8px;
+    }
+
+    .contact .email-email-form input,
+    .contact .email-email-form textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+    .contact .email-email-form input {
+      height: 44px;
+    }
+
+    .contact .email-email-form textarea {
+      padding: 10px 15px;
+    }
+
+    .contact .email-email-form button[type=submit] {
+      background: #F68651;
+      border: 0;
+      padding: 10px 24px;
+      color: #fff;
+      transition: 0.4s;
+      border-radius: 4px;
+    }
+
+    .contact .email-email-form button[type=submit]:hover {
+      background: #37b3ed;
+    }
+
+    @keyframes animate-loading {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -35,7 +866,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="https://arpy8.github.io/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Arpit Sengar</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/arpitsengar/" class="linkedin"><i class="bi bi-linkedin"></i></a>
@@ -81,7 +912,7 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>I code.</h3>
@@ -354,7 +1185,7 @@
         <div class="row portfolio-container" >
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="img/projects/alzheimer.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/alzheimer.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://github.com/arpy8/Alzheimers_Prediction_System" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://alzheimers-prediction.streamlit.app" target="_blank"><i class="bi bi-link"></i></a>
@@ -364,7 +1195,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="img/projects/plant.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/plant.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Plant_Disease_Detection" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://github.com/arpy8/Plant_Disease_Detection#note" target="_blank"><i class="bi bi-link"></i></a>
@@ -374,7 +1205,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="img/projects/sonnet.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/sonnet.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/ArpitSengar_TaskRound_GDSC_VITB" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://shakespeares-sonnets.streamlit.app" target="_blank"><i class="bi bi-link"></i></a>
@@ -384,7 +1215,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="img/projects/insaights.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/insaights.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/insaights" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://insaights.streamlit.app" target="_blank"><i class="bi bi-link"></i></a>
@@ -395,7 +1226,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="img/projects/randai.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/randai.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Random_AI_Image_Generator" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://randai.streamlit.app/" target="_blank"><i class="bi bi-link"></i></a>
@@ -405,7 +1236,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="img/projects/pothole.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/pothole.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Pothole_Detection_YOLOv8" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://github.com/arpy8/Pothole_Detection_YOLOv8/blob/main/Pothole_Detection.ipynb" target="_blank"><i class="bi bi-link"></i></a>
@@ -415,7 +1246,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="img/projects/sleep.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/sleep.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Sleep_Efficiency_Analysis" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://sleepefficiencyanalysis.streamlit.app/" target="_blank"><i class="bi bi-link"></i></a>
@@ -425,7 +1256,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="img/projects/house.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/house.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/House_Price_Prediction" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://github.com/arpy8/House_Price_Prediction/blob/main/House%20Prediction%20Model.ipynb" target="_blank"><i class="bi bi-link"></i></a>
@@ -435,7 +1266,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="img/projects/wine.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/wine.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Wine_Quality_Prediction" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://github.com/arpy8/Wine_Quality_Prediction/blob/main/Wine%20Quality%20Prediction.ipynb" target="_blank"><i class="bi bi-link"></i></a>
@@ -448,7 +1279,7 @@
           <!-- <hr> -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
             <div class="portfolio-wrap">
-              <img src="img/projects/omdena-mexico.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/omdena-mexico.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/OmdenaAI/bhopal-mexico-ai-road-inspection" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://restlesshornet-omdenawebapp-app-1qfufd.streamlit.app/" target="_blank"><i class="bi bi-link"></i></a>
@@ -459,7 +1290,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
             <div class="portfolio-wrap">
-              <img src="img/projects/omdena-giza.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/omdena-giza.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://omdena.com/chapter-challenges/natural-language-processing-with-disaster-tweets/" target="_blank"><i class="bi bi-globe"></i></a>
                 <a href="https://app-2-tweets-classification.streamlit.app/Tweet_Classification" target="_blank"><i class="bi bi-link"></i></a>
@@ -470,7 +1301,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
             <div class="portfolio-wrap">
-              <img src="img/projects/omdena-rwanda.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/omdena-rwanda.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Omdena_Rwanda_Streamlit_App" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://water-quality-prediction-system.streamlit.app" target="_blank"><i class="bi bi-link"></i></a>
@@ -481,7 +1312,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
             <div class="portfolio-wrap">
-              <img src="img/projects/omdena-myanmar.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/omdena-myanmar.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Omdena_Myanmar_Streamlit_App" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://chest-xrays-detection-system.streamlit.app" target="_blank"><i class="bi bi-link"></i></a>
@@ -492,7 +1323,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
             <div class="portfolio-wrap">
-              <img src="img/projects/omdena-nigeria.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/omdena-nigeria.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/OmdenaAI/nigeria-chapter-interactive-chatbot" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://omdena.com/chapter-challenges/developing-an-interactive-chatbot-for-the-omdena-website/" target="_blank"><i class="bi bi-link"></i></a>
@@ -503,7 +1334,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
             <div class="portfolio-wrap">
-              <img src="img/projects/omdena-algeria-bhopal.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/omdena-algeria-bhopal.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://www.omdena.com/chapter-challenges/open-source-water-management-and-forecasting-project-in-algeria-and-bhopal" target="_blank"><i class="bi bi-globe"></i></a>
                 <a href="https://dagshub.com/Omdena/AlgeriaBhopal_WaterManagementandForecasting" target="_blank"><i class="bi bi-git"></i></a>
@@ -515,7 +1346,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-omd">
             <div class="portfolio-wrap">
-              <img src="img/projects/omdena-toronto.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/omdena-toronto.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://www.omdena.com/chapter-challenges/analyzing-brain-scan-images-for-the-early-detection-and-diagnosis-of-alzheimers-disease" target="_blank"><i class="bi bi-globe"></i></a>
                 <a href="https://dagshub.com/Omdena/TorontoCanadaChapter_BrainScanImages" target="_blank"><i class="bi bi-git"></i></a>
@@ -528,7 +1359,7 @@
           <!-- WEB DEVELOPMENT -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/man-mitra.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/man-mitra.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/ManMitra" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://man-mitra.vercel.app/" target="_blank"><i class="bi bi-link"></i></a>
@@ -539,7 +1370,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/gfg.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/gfg.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/ArpitSengar_TaskRound_GFG_VITB" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://arpy8.github.io/ArpitSengar_TaskRound_GFG_VITB/" target="_blank"><i class="bi bi-link"></i></a>
@@ -549,7 +1380,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/cafe.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/cafe.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/cafe_website/" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://arpy8.github.io/cafe_website/" target="_blank"><i class="bi bi-link"></i></a>
@@ -559,7 +1390,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/tindog.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/tindog.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/tindog/" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://arpy8.github.io/tindog/" target="_blank"><i class="bi bi-link"></i></a>
@@ -569,7 +1400,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/newspulse.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/newspulse.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://github.com/arpy8/Streamlit_Connection_Hackathon" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://connectionshackathon.streamlit.app/" target="_blank"><i class="bi bi-link"></i></a>
@@ -580,7 +1411,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/tech-news.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/tech-news.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://github.com/arpy8/Tech_News_Website" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://techtoday.streamlit.app/" target="_blank"><i class="bi bi-link"></i></a>
@@ -591,7 +1422,7 @@
           <!-- PORTFOLIOS -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/portfolio-1.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/portfolio-1.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://github.com/arpy8/portfolios/tree/main/1" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://arpy8.github.io/portfolios/1/index.html" target="_blank"><i class="bi bi-link"></i></a>
@@ -601,7 +1432,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/portfolio-2.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/portfolio-2.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://github.com/arpy8/portfolios/tree/main/2" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://arpy8.github.io/portfolios/2/index.html" target="_blank"><i class="bi bi-link"></i></a>
@@ -611,7 +1442,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/portfolio-3.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/portfolio-3.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://github.com/arpy8/portfolios/tree/main/3" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://arpy8.github.io/portfolios/3/index.html" target="_blank"><i class="bi bi-link"></i></a>
@@ -621,7 +1452,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/portfolio-4.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/portfolio-4.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://github.com/arpy8/portfolios/tree/main/4" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://arpy8.github.io/portfolios/4/index.html" target="_blank"><i class="bi bi-link"></i></a>
@@ -631,7 +1462,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/portfolio-5.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/portfolio-5.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="https://github.com/arpy8/arpy8.github.io" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://arpy8.github.io" target="_blank"><i class="bi bi-link"></i></a>
@@ -641,7 +1472,7 @@
           
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/projects/portfolio-archive.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/portfolio-archive.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/portfolios/" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://arpy8.github.io/portfolios/" target="_blank"><i class="bi bi-link"></i></a>
@@ -652,7 +1483,7 @@
           <!-- PACKAGES -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
             <div class="portfolio-wrap">
-              <img src="img/projects/disdial.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/disdial.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/disdial" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://pypi.org/project/disdial/" target="_blank"><i class="bi bi-link"></i></a>
@@ -662,7 +1493,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
             <div class="portfolio-wrap">
-              <img src="img/projects/hlokty.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/hlokty.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/hlokty" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://pypi.org/project/hlokty/" target="_blank"><i class="bi bi-link"></i></a>
@@ -672,7 +1503,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
             <div class="portfolio-wrap">
-              <img src="img/projects/stret.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/stret.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/stret" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://pypi.org/project/stret/" target="_blank"><i class="bi bi-link"></i></a>
@@ -682,7 +1513,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
             <div class="portfolio-wrap">
-              <img src="img/projects/arpit.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/arpit.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/arpit/" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://pypi.org/project/arpit/" target="_blank"><i class="bi bi-link"></i></a>
@@ -692,7 +1523,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
             <div class="portfolio-wrap">
-              <img src="img/projects/bsod.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/bsod.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/bsod" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://pypi.org/project/bsod/" target="_blank"><i class="bi bi-link"></i></a>
@@ -702,7 +1533,7 @@
 
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-pack">
             <div class="portfolio-wrap">
-              <img src="img/projects/pikmin.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/pikmin.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/pikmin" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://pypi.org/project/pikmin/" target="_blank"><i class="bi bi-link"></i></a>
@@ -715,7 +1546,7 @@
           <hr> -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-cv">
             <div class="portfolio-wrap">
-              <img src="img/projects/hand.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/hand.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Hand_Gesture_Control" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://www.linkedin.com/posts/arpitsengar_computervision-gesturecontrol-opensource-activity-7102331694921244672-RLiF/" target="_blank"><i class="bi bi-camera-video"></i></a>
@@ -725,7 +1556,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-cv">
             <div class="portfolio-wrap">
-              <img src="img/projects/chime.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/chime.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Door_Chime_using_OpenCV" target="_blank"><i class="bi bi-github"></i></a>
               </div>
@@ -735,7 +1566,7 @@
           <!--  AUTOMATION -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-auto">
             <div class="portfolio-wrap">
-              <img src="img/projects/github.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/github.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Github_Follow_Bot" target="_blank"><i class="bi bi-github"></i></a>
               </div>
@@ -744,7 +1575,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-auto">
             <div class="portfolio-wrap">
-              <img src="img/projects/linkedin.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/linkedin.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Linkedin_Follow_Bot" target="_blank"><i class="bi bi-github"></i></a>
               </div>
@@ -753,7 +1584,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-auto">
             <div class="portfolio-wrap">
-              <img src="img/projects/vityarthi.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/vityarthi.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Vityarthi_Course_Completer/" target="_blank"><i class="bi bi-github"></i></a>
               </div>
@@ -762,7 +1593,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-auto">
             <div class="portfolio-wrap">
-              <img src="img/projects/intruder.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/intruder.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/IntruderShield" target="_blank"><i class="bi bi-github"></i></a>
               </div>
@@ -774,7 +1605,7 @@
           <hr> -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-crs">
             <div class="portfolio-wrap">
-              <img src="img/projects/100.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/100.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/100_days_of_python" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://ude.my/UC-d3f8ea5c-c279-4f9d-b687-fad149ac4883/" target="_blank"><i class="bi bi-award"></i></a>
@@ -784,7 +1615,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-crs">
             <div class="portfolio-wrap">
-              <img src="img/projects/cpp.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/cpp.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/CPP_Journey" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="https://www.udemy.com/certificate/UC-a77839ad-27e1-47f9-8068-a068d80e6083/" target="_blank"><i class="bi bi-award"></i></a>
@@ -794,7 +1625,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-crs">
             <div class="portfolio-wrap">
-              <img src="img/projects/dsa.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/dsa.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/DSA_in_CPP" target="_blank"><i class="bi bi-github"></i></a>
               </div>
@@ -806,7 +1637,7 @@
           <hr> -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-misc">
             <div class="portfolio-wrap">
-              <img src="img/projects/pomodoro.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/pomodoro.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/Pomodoro_App" target="_blank"><i class="bi bi-github"></i></a>
               </div>
@@ -815,7 +1646,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-misc">
             <div class="portfolio-wrap">
-              <img src="img/projects/secure.webp" class="img-fluid" alt="">
+              <img src="https://raw.githubusercontent.com/arpy8/arpy8.github.io/assets/img/projects/secure.webp" class="img-fluid" alt="">
               <div class="portfolio-links">
                   <a href="https://github.com/arpy8/SecureVault" target="_blank"><i class="bi bi-github"></i></a>
               </div>
@@ -908,7 +1739,211 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 
-  <script src="script.js"></script>
+  <script>
+    (function() {
+      "use strict";
 
+      const select = (el, all = false) => {
+        el = el.trim()
+        if (all) {
+          return [...document.querySelectorAll(el)]
+        } else {
+          return document.querySelector(el)
+        }
+      }
+
+      const on = (type, el, listener, all = false) => {
+        let selectEl = select(el, all)
+        if (selectEl) {
+          if (all) {
+            selectEl.forEach(e => e.addEventListener(type, listener))
+          } else {
+            selectEl.addEventListener(type, listener)
+          }
+        }
+      }
+
+      const onscroll = (el, listener) => {
+        el.addEventListener('scroll', listener)
+      }
+
+      let navbarlinks = select('#navbar .scrollto', true)
+      const navbarlinksActive = () => {
+        let position = window.scrollY + 200
+        navbarlinks.forEach(navbarlink => {
+          if (!navbarlink.hash) return
+          let section = select(navbarlink.hash)
+          if (!section) return
+          if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+            navbarlink.classList.add('active')
+          } else {
+            navbarlink.classList.remove('active')
+          }
+        })
+      }
+      window.addEventListener('load', navbarlinksActive)
+      onscroll(document, navbarlinksActive)
+
+      const scrollto = (el) => {
+        let elementPos = select(el).offsetTop
+        window.scrollTo({
+          top: elementPos,
+          behavior: 'smooth'
+        })
+      }
+
+      let backtotop = select('.back-to-top')
+      if (backtotop) {
+        const toggleBacktotop = () => {
+          if (window.scrollY > 100) {
+            backtotop.classList.add('active')
+          } else {
+            backtotop.classList.remove('active')
+          }
+        }
+        window.addEventListener('load', toggleBacktotop)
+        onscroll(document, toggleBacktotop)
+      }
+
+      on('click', '.mobile-nav-toggle', function(e) {
+        select('body').classList.toggle('mobile-nav-active')
+        this.classList.toggle('bi-list')
+        this.classList.toggle('bi-x')
+      })
+
+      on('click', '.scrollto', function(e) {
+        if (select(this.hash)) {
+          e.preventDefault()
+
+          let body = select('body')
+          if (body.classList.contains('mobile-nav-active')) {
+            body.classList.remove('mobile-nav-active')
+            let navbarToggle = select('.mobile-nav-toggle')
+            navbarToggle.classList.toggle('bi-list')
+            navbarToggle.classList.toggle('bi-x')
+          }
+          scrollto(this.hash)
+        }
+      }, true)
+
+      window.addEventListener('load', () => {
+        if (window.location.hash) {
+          if (select(window.location.hash)) {
+            scrollto(window.location.hash)
+          }
+        }
+      });
+
+      const typed = select('.typed')
+      if (typed) {
+        let typed_strings = typed.getAttribute('data-typed-items')
+        typed_strings = typed_strings.split(',')
+        new Typed('.typed', {
+          strings: typed_strings,
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay: 2000
+        });
+      }
+
+      let skilsContent = select('.skills-content');
+      if (skilsContent) {
+        new Waypoint({
+          element: skilsContent,
+          offset: '80%',
+          handler: function(direction) {
+            let progress = select('.progress .progress-bar', true);
+            progress.forEach((el) => {
+              el.style.width = el.getAttribute('aria-valuenow') + '%'
+            });
+          }
+        })
+      }
+
+      window.addEventListener('load', () => {
+        let portfolioContainer = select('.portfolio-container');
+        if (portfolioContainer) {
+          let portfolioIsotope = new Isotope(portfolioContainer, {
+            itemSelector: '.portfolio-item'
+          });
+
+          let portfolioFilters = select('#portfolio-flters li', true);
+
+          on('click', '#portfolio-flters li', function(e) {
+            e.preventDefault();
+            portfolioFilters.forEach(function(el) {
+              el.classList.remove('filter-active');
+            });
+            this.classList.add('filter-active');
+
+            portfolioIsotope.arrange({
+              filter: this.getAttribute('data-filter')
+            });
+            portfolioIsotope.on('arrangeComplete', function() {
+              AOS.refresh()
+            });
+          }, true);
+        }
+
+      });
+
+      const portfolioLightbox = GLightbox({
+        selector: '.portfolio-lightbox'
+      });
+
+      new Swiper('.portfolio-details-slider', {
+        speed: 400,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        }
+      });
+
+      new Swiper('.testimonials-slider', {
+        speed: 600,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        slidesPerView: 'auto',
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          }
+        }
+      });
+
+      window.addEventListener('load', () => {
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false
+        })
+      });
+
+      new PureCounter();
+
+    })()
+  </script>
 </body>
 </html>https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css
