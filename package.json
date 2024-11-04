@@ -1,0 +1,17 @@
+{
+  "name": "arpy8.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to the repository for my personal website!",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "path": "^0.12.7"
+  }
+}
