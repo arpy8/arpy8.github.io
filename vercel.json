@@ -1,0 +1,14 @@
+{
+	"version": 2,
+	"builds": [
+		{
+			"src": "api/index.js",
+			"use": "@now/node"
+		}
+	],
+	"framework": null,
+	"installCommand": "",
+	"buildCommand": "",
+	"outputDirectory": "public",
+	"rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+}
