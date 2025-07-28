@@ -1,0 +1,42 @@
+* {
+  border: 1px solid red;
+}
+body {
+  /* padding: 0% 2%; */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  position: absolute;
+  left: 5%;
+  top: 25vh;
+  /* -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+
+  overflow: hidden;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 0px 10px 0px 0px;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.links li {
+  float: left;
+}
+
+/* @media screen and (max-width: 600px) { */
+/* body {
+    padding: 0% 25%;
+  } */
+/* } */
